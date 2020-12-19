@@ -174,6 +174,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 1
+  friction: 0
   contacts: []
 --- !u!23 &259035167
 MeshRenderer:
@@ -280,8 +281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97945c94ef046184abc792ceb6046327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBullets: 0
-  bullet: {fileID: 0}
+  MaxBullets: 30
+  bullet: {fileID: 2898771445226466676, guid: dc05ecf40a596104686052b7abdee0d3, type: 3}
 --- !u!4 &403008323
 Transform:
   m_ObjectHideFlags: 0
@@ -342,6 +343,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 1
+  friction: 0
   contacts: []
 --- !u!23 &526557354
 MeshRenderer:
@@ -464,6 +466,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 0
+  friction: 0
   contacts: []
 --- !u!23 &553101961
 MeshRenderer:
@@ -746,6 +749,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 0
+  friction: 0
   contacts: []
 --- !u!1 &681930395
 GameObject:
@@ -915,6 +919,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 1
+  friction: 0
   contacts: []
 --- !u!23 &872938395
 MeshRenderer:
@@ -1100,6 +1105,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 0
+  friction: 0
   contacts: []
 --- !u!1 &1125924261
 GameObject:
@@ -1433,6 +1439,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 1
+  friction: 0
   contacts: []
 --- !u!23 &1600962765
 MeshRenderer:
@@ -1555,6 +1562,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 0
+  friction: 0
   contacts: []
 --- !u!23 &1702079927
 MeshRenderer:
@@ -1664,6 +1672,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 0
+  friction: 0
   contacts: []
 --- !u!23 &1819889583
 MeshRenderer:
@@ -1886,6 +1895,7 @@ MonoBehaviour:
   force: 0
   speed: 0
   isStatic: 1
+  friction: 0
   contacts: []
 --- !u!23 &1974007506
 MeshRenderer:
