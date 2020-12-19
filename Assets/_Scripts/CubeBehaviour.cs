@@ -23,6 +23,7 @@ public class CubeBehaviour : MonoBehaviour
     public float force;
     public float speed;
     public bool isStatic;
+    public float friction;
 
     public List<CubeBehaviour> contacts;
 
@@ -43,6 +44,8 @@ public class CubeBehaviour : MonoBehaviour
         gravity = -0.001f;
         velocity = Vector3.zero;
         //acceleration = new Vector3(0.0f, , 0.0f);
+
+        friction = 0.9f;
     }
 
     // Update is called once per frame
@@ -54,6 +57,14 @@ public class CubeBehaviour : MonoBehaviour
         if(!isStatic)
         {
             _Move();
+        }
+
+        if (isColliding)
+        {
+            if (speed > 0f)
+            {
+                speed *= friction;
+            }
         }
 
     }
