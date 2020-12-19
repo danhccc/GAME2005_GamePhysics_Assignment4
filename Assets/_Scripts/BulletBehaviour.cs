@@ -31,6 +31,10 @@ public class BulletBehaviour : MonoBehaviour
     {
         _Move();
         _CheckBounds();
+        if (force <= 0.2f)
+        {
+            bulletManager.ReturnBullet(gameObject);
+        }
     }
 
     private void _Move()
@@ -45,7 +49,7 @@ public class BulletBehaviour : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, Vector3.zero) > range)
         {
-            Destroy(gameObject);
+            bulletManager.ReturnBullet(gameObject);
         }
     }
 }
