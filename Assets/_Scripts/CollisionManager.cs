@@ -129,11 +129,21 @@ public class CollisionManager : MonoBehaviour
 
             bullet.penetration = penetration;
             bullet.collisionNormal = face;
-            //s.isColliding = true;
-            cube.hitByBullet = true;
-            cube.direction = bullet.collisionNormal;
-            cube.speed = bullet.force;
-            
+
+            if (cube.hitByBullet == false)
+            {
+                cube.direction = new Vector3(0.0f, -1.0f, 0.0f);
+                cube.speed = bullet.force;
+                cube.hitByBullet = true;
+            }
+            else if (cube.isColliding)
+            {
+                cube.direction = bullet.collisionNormal;
+                cube.speed = bullet.force;
+
+            }
+
+            bullet.speed *= 0.6f;
 
             Reflect(bullet);
         }
